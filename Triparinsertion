@@ -1,0 +1,17 @@
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]  # Sélectionner l'élément actuel à insérer
+        j = i - 1
+        
+        # Déplacer les éléments du tableau trié qui sont plus grands que key vers la droite
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        
+        # Insérer l'élément key à la bonne position dans le tableau trié
+        arr[j + 1] = key
+
+# Exemple d'utilisation :
+arr = [12, 11, 13, 5, 6]
+insertion_sort(arr)
+print("Tableau trié:", arr)
