@@ -1,0 +1,7 @@
+def are_vectors_orthogonal(v1, v2):
+    ps = dot_product(v1, v2)  # Appeler la fonction dot_product
+    
+    if ps == 0:
+        return True  # Les vecteurs sont orthogonaux
+    else:
+        return False  # Les vecteurs ne sont pas orthogonaux
