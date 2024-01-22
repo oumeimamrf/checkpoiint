@@ -1,0 +1,10 @@
+def dot_product(v1, v2):
+    if len(v1) != len(v2):
+        raise ValueError("Les vecteurs doivent avoir la même longueur.")
+    
+    ps = 0  # Initialiser le produit scalaire à zéro
+    
+    for i in range(len(v1)):
+        ps += v1[i] * v2[i]  # Calculer le produit scalaire
+    
+    return ps
